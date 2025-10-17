@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class OperacionesMenu {
 
-
     public static void agregarProducto(ArrayList<Producto> productos, Scanner scanner){
         String nombre;
         String categoria;

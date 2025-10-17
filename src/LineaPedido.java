@@ -1,7 +1,9 @@
 public class LineaPedido {
+    //ATRIBUTOS
     Producto producto;
     int cantidad;
 
+    //CONSTRUCTOR
     public LineaPedido(Producto producto, int cantidad) {
         this.producto = producto;
         this.cantidad = cantidad;

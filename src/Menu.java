@@ -1,4 +1,5 @@
 public class Menu {
+
     //METODOS
     public void inicioMenu(){
         System.out.println("""
@@ -19,7 +20,7 @@ public class Menu {
                 4) Eliminar producto
                 5) Crear pedido
                 6) Listar pedidos
-                0) Salir
+                0   ) Salir
                 """);
     }
 

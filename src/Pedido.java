@@ -1,19 +1,23 @@
 import java.util.ArrayList;
 
 public class Pedido {
+    //ATRIBUTOS
     private static int contador = 1;
     private ArrayList<LineaPedido> lineas;
     private int idPedido;
 
+    //CONSTRUCTOR
     public Pedido(){
         this.idPedido = contador++;
         this.lineas = new ArrayList<>();
     }
 
+    //GETTERS Y SETTERS
     public ArrayList<LineaPedido> getLineas() {
         return lineas;
     }
 
+    //METODOS
     public void agregarLinea(Producto producto, int cantidad) {
         lineas.add(new LineaPedido(producto, cantidad));
     }
@@ -35,7 +39,6 @@ public class Pedido {
         }
         informacion.append(String.format("Total: $ %.2f", calcularTotal()));
         return informacion.toString();
-
     }
 
 
